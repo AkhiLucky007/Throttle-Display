@@ -1,0 +1,294 @@
+2026-02-10 17:04:38,308 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:04:38,329 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:04:38,408 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:04:38,409 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:04:38,410 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:04:38,411 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:04:38,411 - ui.main_window - INFO - Data source started
+2026-02-10 17:04:39,381 - __main__ - INFO - Application window displayed
+2026-02-10 17:04:39,491 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:04:44,760 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:04:50,250 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:04:51,238 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:04:51,350 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:04:51,462 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:04:51,574 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:04:51,670 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:04:51,781 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:04:51,893 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:05:00,099 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:05:00,210 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:05:00,545 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:05:01,213 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:05:10,209 - ui.main_window - INFO - Application closing
+2026-02-10 17:05:10,209 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:06:44,735 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:06:44,752 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:06:44,813 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:06:44,814 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:06:44,815 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:06:44,817 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:06:44,818 - ui.main_window - INFO - Data source started
+2026-02-10 17:06:45,253 - __main__ - INFO - Application window displayed
+2026-02-10 17:06:45,344 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:06:52,150 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:06:52,262 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:06:52,597 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:06:52,708 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:06:52,819 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:06:52,931 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:06:53,043 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:07:01,813 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:07:06,445 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:07:07,115 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:07:10,575 - ui.main_window - INFO - Application closing
+2026-02-10 17:07:10,575 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:09:12,655 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:09:12,671 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:09:12,740 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:09:12,741 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:09:12,741 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:09:12,742 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:09:12,742 - ui.main_window - INFO - Data source started
+2026-02-10 17:09:13,172 - __main__ - INFO - Application window displayed
+2026-02-10 17:09:13,238 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:09:22,707 - ui.main_window - INFO - Application closing
+2026-02-10 17:09:22,707 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:35:07,712 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:35:07,731 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:35:07,797 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:35:07,799 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:35:07,800 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:37:59,471 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:37:59,502 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:37:59,555 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:37:59,556 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:37:59,556 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:37:59,557 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:37:59,557 - ui.main_window - INFO - Data source started
+2026-02-10 17:38:00,011 - __main__ - INFO - Application window displayed
+2026-02-10 17:38:00,098 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:38:05,453 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:38:11,030 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:38:16,512 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:38:32,927 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 17:38:33,151 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:38:38,390 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:38:49,360 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 17:38:50,457 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:38:50,568 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:38:50,679 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:38:50,901 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:38:51,012 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:38:52,973 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:38:59,902 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:39:00,326 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:39:26,208 - ui.main_window - INFO - Application closing
+2026-02-10 17:39:26,208 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:44:43,764 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:44:43,812 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:44:43,884 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:44:43,884 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:44:43,884 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:44:43,885 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:44:43,885 - ui.main_window - INFO - Data source started
+2026-02-10 17:44:44,794 - __main__ - INFO - Application window displayed
+2026-02-10 17:44:44,864 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:44:50,458 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:44:55,943 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:45:10,212 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:45:10,323 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:45:10,419 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:45:12,396 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:45:17,881 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:45:18,647 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:45:20,399 - ui.main_window - INFO - Application closing
+2026-02-10 17:45:20,399 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:45:49,259 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:45:49,275 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:45:49,342 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:45:49,342 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:45:49,343 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:45:49,344 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:45:49,344 - ui.main_window - INFO - Data source started
+2026-02-10 17:45:49,915 - __main__ - INFO - Application window displayed
+2026-02-10 17:45:49,989 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:45:54,266 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:45:55,271 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:46:11,750 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 17:46:16,367 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:46:22,887 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:46:28,343 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:46:29,569 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:46:33,845 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:46:35,042 - ui.main_window - INFO - Application closing
+2026-02-10 17:46:35,042 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:49:43,511 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:49:43,543 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:49:43,601 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:49:43,602 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:49:43,603 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:49:43,604 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:49:43,604 - ui.main_window - INFO - Data source started
+2026-02-10 17:49:44,057 - __main__ - INFO - Application window displayed
+2026-02-10 17:49:44,123 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:49:49,209 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:49:49,432 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:49:54,927 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:49:57,876 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:50:00,613 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:50:05,871 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:50:11,350 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:50:17,576 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:50:22,313 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:50:30,494 - ui.main_window - INFO - Application closing
+2026-02-10 17:50:30,494 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:53:11,987 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:53:12,009 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:53:12,067 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:53:12,067 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:53:12,068 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:53:12,069 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:53:12,069 - ui.main_window - INFO - Data source started
+2026-02-10 17:53:12,532 - __main__ - INFO - Application window displayed
+2026-02-10 17:53:12,600 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:53:16,886 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:53:17,858 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:53:28,801 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 17:53:36,685 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:53:36,793 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:53:37,012 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:53:38,890 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:53:45,566 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:53:49,285 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:53:52,016 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:54:01,659 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:54:12,600 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 17:54:18,076 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:54:24,651 - ui.main_window - INFO - Application closing
+2026-02-10 17:54:24,651 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:55:34,203 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:55:34,242 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:55:34,300 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:55:34,300 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:55:34,301 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:55:34,302 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:55:34,303 - ui.main_window - INFO - Data source started
+2026-02-10 17:55:34,763 - __main__ - INFO - Application window displayed
+2026-02-10 17:55:34,844 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:55:39,341 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:55:42,294 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:55:42,405 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:55:42,517 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:55:42,629 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:55:42,741 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:55:51,175 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:56:02,124 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:56:02,459 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:56:02,571 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:56:02,779 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:56:04,309 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:56:08,957 - ui.main_window - INFO - Application closing
+2026-02-10 17:56:08,957 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:56:27,832 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:56:27,864 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:56:27,919 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:56:27,920 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:56:27,920 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:56:27,921 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:56:27,921 - ui.main_window - INFO - Data source started
+2026-02-10 17:56:28,398 - __main__ - INFO - Application window displayed
+2026-02-10 17:56:28,511 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:56:39,344 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:56:44,030 - ui.main_window - INFO - Application closing
+2026-02-10 17:56:44,030 - ui.main_window - INFO - Connection status: Simulator Stopped
+2026-02-10 17:57:38,177 - __main__ - INFO - Starting Throttle Dashboard Application
+2026-02-10 17:57:38,202 - core.state_machine - INFO - StateMachine initialized (fault threshold: 70.0%)
+2026-02-10 17:57:38,281 - ui.main_window - INFO - Theme applied successfully
+2026-02-10 17:57:38,282 - ui.main_window - INFO - Main window initialized
+2026-02-10 17:57:38,282 - comms.data_simulator - INFO - Throttle simulator initialized
+2026-02-10 17:57:38,284 - ui.main_window - INFO - Connection status: Simulator Active
+2026-02-10 17:57:38,284 - ui.main_window - INFO - Data source started
+2026-02-10 17:57:38,841 - __main__ - INFO - Application window displayed
+2026-02-10 17:57:38,937 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:57:43,470 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:57:44,453 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:58:00,935 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:58:12,426 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:17,486 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:58:22,980 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 17:58:28,463 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:58:33,925 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:58:35,789 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:35,900 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:58:36,012 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:39,394 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:58:39,507 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:39,729 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:58:39,825 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:40,050 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:58:41,916 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:42,027 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:58:42,236 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:44,871 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 17:58:55,857 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:58:57,044 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:57,267 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:58:57,491 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:58:58,034 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:59:06,832 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:59:17,896 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 17:59:20,435 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:59:20,657 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:59:20,768 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:59:21,323 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:59:34,365 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 17:59:50,800 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 17:59:51,353 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:59:51,569 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 17:59:51,671 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 17:59:56,323 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 18:00:01,811 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 18:00:02,042 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:00:11,394 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:00:11,616 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:00:11,731 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:00:14,255 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:00:14,364 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:00:14,479 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:00:14,686 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:00:14,796 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:00:23,023 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:00:23,237 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:00:23,356 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:00:23,802 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 18:00:29,316 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 18:00:31,963 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:00:33,825 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:00:40,320 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 18:00:45,826 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 18:00:57,132 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:01:00,623 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:01:02,264 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 18:01:07,756 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 18:01:17,307 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:01:18,726 - core.state_machine - INFO - State transition: FAULT -> DISABLED
+2026-02-10 18:01:29,715 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 18:01:30,262 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:01:30,359 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:01:30,468 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:01:33,442 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:01:40,352 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:01:43,304 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:01:46,150 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 18:01:51,639 - core.state_machine - INFO - State transition: DISABLED -> READY
+2026-02-10 18:02:04,155 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:02:04,591 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:02:04,702 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:02:09,756 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:02:10,191 - core.state_machine - INFO - State transition: READY -> FAULT
+2026-02-10 18:02:10,302 - core.state_machine - INFO - State transition: FAULT -> READY
+2026-02-10 18:02:19,118 - core.state_machine - INFO - State transition: READY -> DISABLED
+2026-02-10 18:02:24,591 - core.state_machine - INFO - State transition: DISABLED -> FAULT
+2026-02-10 18:02:25,440 - ui.main_window - INFO - Application closing
+2026-02-10 18:02:25,440 - ui.main_window - INFO - Connection status: Simulator Stopped

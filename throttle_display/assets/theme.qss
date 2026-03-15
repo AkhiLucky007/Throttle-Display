@@ -1,0 +1,137 @@
+/* Premium Dark Theme for Throttle Dashboard */
+
+/* Main Window */
+QMainWindow {
+    background-color: #0a0e1a;
+}
+
+/* Central Widget */
+QWidget {
+    background-color: #0a0e1a;
+    color: #e0e6ed;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* Dashboard Panel */
+.DashboardPanel {
+    background-color: #141b2d;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+}
+
+/* Value Display Labels */
+.ValueLabel {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding: 10px;
+}
+
+/* State Labels */
+.StateLabel {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+.StateLabel[state="READY"] {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 2px solid #22c55e;
+}
+
+.StateLabel[state="FAULT"] {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 2px solid #ef4444;
+}
+
+.StateLabel[state="DISABLED"] {
+    background-color: rgba(107, 114, 128, 0.15);
+    color: #6b7280;
+    border: 2px solid #6b7280;
+}
+
+/* Section Headers */
+.SectionHeader {
+    font-size: 12px;
+    font-weight: 600;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+/* Status Bar Items */
+.StatusItem {
+    font-size: 11px;
+    color: #9ca3af;
+    padding: 4px 12px;
+    background-color: #1f2937;
+    border-radius: 6px;
+    margin: 0 4px;
+}
+
+.StatusItem[status="connected"] {
+    color: #22c55e;
+}
+
+.StatusItem[status="disconnected"] {
+    color: #ef4444;
+}
+
+/* Indicators */
+.Indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin-right: 6px;
+}
+
+.Indicator[state="active"] {
+    background-color: #22c55e;
+}
+
+.Indicator[state="inactive"] {
+    background-color: #6b7280;
+}
+
+.Indicator[state="error"] {
+    background-color: #ef4444;
+}
+
+/* Plot Widget Styling */
+PlotWidget {
+    background-color: #141b2d;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Scrollbar */
+QScrollBar:vertical {
+    background: #1f2937;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #374151;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #4b5563;
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: #1f2937;
+    color: #e0e6ed;
+    border: 1px solid #374151;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}

@@ -1,0 +1,218 @@
+# System Architecture Diagram
+
+## Overall System Flow
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     THROTTLE DASHBOARD                       │
+│                    (Your Computer - Python)                  │
+└─────────────────────────────────────────────────────────────┘
+                              ▲
+                              │
+                    ┌─────────┴─────────┐
+                    │   Data Packets    │
+                    │      (JSON)       │
+                    └─────────┬─────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+   ┌────▼────┐          ┌────▼────┐          ┌────▼────┐
+   │ Serial  │          │  WiFi   │          │ Simul-  │
+   │  (USB)  │          │  (TCP)  │          │  ator   │
+   └────┬────┘          └────┬────┘          └────┬────┘
+        │                     │                     │
+        │                     │                  (Testing)
+        │                     │
+   ┌────▼─────────────────────▼────┐
+   │       ESP32 / Arduino          │
+   │    (Your Friend's Part)        │
+   └────────────────┬───────────────┘
+                    │
+              ┌─────▼─────┐
+              │  Throttle │
+              │   Sensor  │
+              │  (Pedal)  │
+              └───────────┘
+```
+
+## Software Layer Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        USER INTERFACE                        │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
+│  │   Throttle   │  │    State     │  │  Real-time   │      │
+│  │   Display    │  │  Indicator   │  │    Plot      │      │
+│  │   (72.3%)    │  │   (FAULT)    │  │  (Scrolling) │      │
+│  └──────────────┘  └──────────────┘  └──────────────┘      │
+│                                                               │
+│  ui/main_window.py, dashboard_layout.py, status_widgets.py   │
+└───────────────────────────┬───────────────────────────────────┘
+                            │
+                    ┌───────▼────────┐
+                    │  Data Update   │
+                    │   (Timer 50ms) │
+                    └───────┬────────┘
+                            │
+┌───────────────────────────▼───────────────────────────────────┐
+│                       CORE LOGIC                              │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │     Data     │  │    State     │  │   Throttle   │       │
+│  │    Model     │  │   Machine    │  │  Processor   │       │
+│  │ (Structure)  │  │  (D/R/F)     │  │ (ADC→%)      │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+│                                                                │
+│  core/data_model.py, state_machine.py, throttle_processor.py  │
+└───────────────────────────┬────────────────────────────────────┘
+                            │
+                    ┌───────▼────────┐
+                    │  JSON Parsing  │
+                    │  Data Validation│
+                    └───────┬────────┘
+                            │
+┌───────────────────────────▼───────────────────────────────────┐
+│                   COMMUNICATION LAYER                          │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
+│  │   Serial     │  │     WiFi     │  │  Simulator   │       │
+│  │   Reader     │  │    Reader    │  │  (Testing)   │       │
+│  │  (Thread)    │  │   (Thread)   │  │   (Timer)    │       │
+│  └──────────────┘  └──────────────┘  └──────────────┘       │
+│                                                                │
+│  comms/serial_comm.py, wifi_comm.py, data_simulator.py        │
+└────────────────────────────────────────────────────────────────┘
+```
+
+## Data Flow Sequence
+
+```
+1. ESP32 reads throttle sensor (ADC)
+           │
+           ▼
+2. ESP32 calculates percentage & determines state
+           │
+           ▼
+3. ESP32 creates JSON packet:
+   {"throttle_adc": 2870, "throttle_pct": 72.3, 
+    "enabled": true, "state": "FAULT"}
+           │
+           ▼
+4. Sends via Serial/WiFi (or Simulator generates)
+           │
+           ▼
+5. Communication layer receives & parses JSON
+           │
+           ▼
+6. Core logic validates & creates ThrottleData object
+           │
+           ▼
+7. State machine updates based on data
+           │
+           ▼
+8. UI timer triggers refresh (every 50ms)
+           │
+           ▼
+9. UI components update displays:
+   - Value display shows percentage
+   - State indicator shows FAULT (red)
+   - Plot adds new point
+   - Status bar updates
+```
+
+## State Machine Logic
+
+```
+                    ┌─────────────┐
+                    │   DISABLED  │
+                    │   (Gray)    │
+                    └──────┬──────┘
+                           │
+                  enabled = true
+                           │
+                    ┌──────▼──────┐
+                    │    READY    │
+                    │   (Green)   │
+                    └──────┬──────┘
+                           │
+                 throttle > 70%
+                           │
+                    ┌──────▼──────┐
+                    │    FAULT    │
+                    │    (Red)    │
+                    └──────┬──────┘
+                           │
+                 throttle ≤ 70%
+                           │
+                    ┌──────▼──────┐
+                    │    READY    │
+                    │   (Green)   │
+                    └─────────────┘
+
+Transitions:
+- enabled = false from ANY state → DISABLED
+- enabled = true + throttle ≤ 70% → READY
+- enabled = true + throttle > 70% → FAULT
+```
+
+## File Dependencies
+
+```
+main.py
+  │
+  ├─► ui/main_window.py
+  │     │
+  │     ├─► ui/dashboard_layout.py
+  │     │     │
+  │     │     ├─► ui/status_widgets.py
+  │     │     └─► ui/plot_widget.py
+  │     │
+  │     └─► core/state_machine.py
+  │
+  └─► comms/data_simulator.py
+        (or serial_comm.py or wifi_comm.py)
+
+Core modules (pure logic, no dependencies):
+  - core/data_model.py
+  - core/state_machine.py
+  - core/throttle_processor.py
+```
+
+## Thread Architecture
+
+```
+Main Thread (Qt Event Loop)
+  │
+  ├─► UI Rendering (60 FPS target)
+  │
+  ├─► Timer: UI Update (20 Hz / 50ms)
+  │     └─► Updates displays with latest data
+  │
+  └─► Timer: Simulator (10 Hz / 100ms)
+        └─► Generates test data
+
+Background Thread (Serial/WiFi only)
+  │
+  └─► Communication Reader
+        ├─► Reads serial/socket continuously
+        ├─► Parses JSON
+        └─► Emits signal with data
+              │
+              └─► Signal → Main Thread → UI Update
+```
+
+## Configuration Flow
+
+```
+config/app_config.yaml
+  │
+  ├─► serial settings → comms/serial_comm.py
+  ├─► wifi settings → comms/wifi_comm.py
+  ├─► throttle settings → core/state_machine.py
+  └─► ui settings → ui/plot_widget.py
+```
+
+This architecture ensures:
+- Clean separation of concerns
+- Easy testing (can test core logic without UI)
+- Swappable communication backends
+- Non-blocking operation
+- Professional code organization

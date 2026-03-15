@@ -1,0 +1,30 @@
+# Application Configuration
+
+# Serial Communication Settings
+serial:
+  port: "COM3"  # Change to your port (COM3 on Windows, /dev/ttyUSB0 on Linux)
+  baudrate: 115200
+  timeout: 1.0
+
+# WiFi Communication Settings
+wifi:
+  host: "192.168.1.100"
+  port: 8080
+
+# Throttle Processing Settings
+throttle:
+  adc_min: 0
+  adc_max: 4095
+  fault_threshold: 70.0  # Percentage
+
+# UI Settings
+ui:
+  update_rate_ms: 50  # 20 Hz refresh rate
+  plot_history_seconds: 10
+  theme: "dark"
+
+# Data Simulator Settings (for testing without hardware)
+simulator:
+  enabled: true
+  update_rate_ms: 100
+  noise_level: 2.0
